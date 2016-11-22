@@ -19,8 +19,6 @@ public class LoginServiceTest {
         loginService = new LoginService(logins);
     }
 
-
-
     @Test
     public void testLoginExists() throws Exception {
         assertTrue(loginService.loginExists("Johnson"));
