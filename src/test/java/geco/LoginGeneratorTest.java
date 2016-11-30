@@ -32,6 +32,11 @@ public class LoginGeneratorTest {
         loginGenerator.generateLoginForNomAndPrenom("Dùrand","Paul");
         assertTrue(loginService.loginExists("PDUR"));
 
+        loginGenerator.generateLoginForNomAndPrenom("Du","Paul");
+        assertTrue(loginService.loginExists("PDU"));
+
+
+
     }
 
     @Test
